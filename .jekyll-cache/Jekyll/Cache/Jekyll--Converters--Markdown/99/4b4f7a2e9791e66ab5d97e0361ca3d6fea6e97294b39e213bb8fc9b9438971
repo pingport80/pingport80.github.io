@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
-<title>Sumo: 1 Vulnhub Walkthrough</title>
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Sumo: 1 Vulnhub Walkthrough | Personal Blog</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Sumo: 1 Vulnhub Walkthrough" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="INFO User: Difficulty: Intermediate CTFey: No Root: Difficulty: Easy CTFey: No OS: Linux" />
-<meta property="og:description" content="INFO User: Difficulty: Intermediate CTFey: No Root: Difficulty: Easy CTFey: No OS: Linux" />
-<link rel="canonical" href="http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough.html" />
-<meta property="og:url" content="http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough.html" />
-<meta property="og:site_name" content="Personal Blog" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-06T11:56:07+05:30" />
-<script type="application/ld+json">
-{"headline":"Sumo: 1 Vulnhub Walkthrough","dateModified":"2020-10-06T11:56:07+05:30","datePublished":"2020-10-06T11:56:07+05:30","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough.html"},"url":"http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough.html","description":"INFO User: Difficulty: Intermediate CTFey: No Root: Difficulty: Easy CTFey: No OS: Linux","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-</head>
-<body>
-  <header class="texture-black">
-    <div class="container"></div><div class="container">
-	<h1>Sumo: 1 Vulnhub Walkthrough</h1>
-	<h4 class="post-description"></h4>
-	<div class="post-date" style="margin-top:20px">
-		Published on Oct 6, 2020
-	</div>
-	<ul class="post-tags"><li>Walkthroughs</li><li>Vulnhub</li></ul>
-</div>
-</header>
-  <main>
-    <div class="container">
-      <div class="post-container">
-          <h2 id="info">INFO</h2>
+I"»<h2 id="info">INFO</h2>
 <ul>
   <li>User:
     <ul>
@@ -111,10 +73,4 @@ Great! We elevated our privileges. Just need to confirm that will <code class="l
 <br />
 <br /></p>
 
-<h3 id="please-feel-free-to-contact-me-for-any-questions-suggestions-or-constructive-critisism"><strong><em>Please feel free to contact me for any questions, suggestions or constructive critisism.</em></strong></h3>
-
-      </div>
-
-        <!-- Configure Disqus --></div>
-  </main></body>
-</html>
+:ET

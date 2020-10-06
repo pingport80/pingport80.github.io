@@ -51,9 +51,9 @@ Because there no such assets on the target other than cgi scripts, we'll go and 
 <br />Shellshock is a bash vulnerability and it's advantage can be taken only when some user input or HTTP headers are being processed by bash, perl, python or 
 cgi scripts. You can find about shellshock in more detail at [link].
 <br />
-So we will fire up Burp-Suite and try to exploit by sending a reverse shell.
+So we will fire up Burp-Suite and try to exploit by sending a reverse shell, by **changing the user-agent or any other value in HTTP request header**.
 <br /> [screenshot burp-suite with shellshock header]
-<br />I've started netcat server so accept any connections for reverse shell.
+<br />I've started netcat server to accept any connections for reverse shell.
 <br />[netcat screenshot with conntect]
 We got our reverse shell, that means the system is vulnerable to shell shock. We can also check it pinging to our system and capture icmp packets with tcmdump or 
 wireshark.
@@ -75,4 +75,6 @@ $./c0w 1
 [screenshot of final state]<br />
 Great! We elevated our privileges. Just need to confirm that will `id`.
 <br />
+<br />
 
+### ***Please feel free to contact me for any questions, suggestions or constructive critisism.***
