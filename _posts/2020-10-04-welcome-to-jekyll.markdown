@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Blog-1"
 date:   2020-10-04 18:11:18 +0530
 categories: jekyll update

@@ -30,7 +30,7 @@ twitter_username: pingport80
 github_username:  pingport80
 
 # Build settings
-theme: texture
+theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
 
