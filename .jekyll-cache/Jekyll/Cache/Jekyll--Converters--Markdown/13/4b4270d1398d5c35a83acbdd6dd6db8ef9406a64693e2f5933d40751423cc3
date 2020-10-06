@@ -1,0 +1,75 @@
+I"]<h2 id="info">INFO</h2>
+<ul>
+  <li>User:
+    <ul>
+      <li>Difficulty: Intermediate</li>
+      <li>CTFey: No</li>
+    </ul>
+  </li>
+  <li>Root:
+    <ul>
+      <li>Difficulty: Easy</li>
+      <li>CTFey: No</li>
+    </ul>
+  </li>
+  <li>OS: Linux</li>
+</ul>
+
+<h2 id="discovering-the-target-machine">Discovering The Target Machine</h2>
+<p>We can discover the target by using Netdiscover but generally I use Namp ping-only scan because it takes much less time than Netdiscover. Netdiscover uses ARP packets to 
+discover the hosts over a range which can be extremely useful when the target host is blocking ping probes and Nmap ping-only scan won’t be able to discover the host. 
+<br />That’s why I always start with Nmap and in case I don’t find anything I move to Netdiscover.
+<br />We can use either of the following commands.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$nmap -sn -T4 192.168.67.*
+OR
+$netdiscover -i eth0 -r 192.168.67.1/24 
+</code></pre></div></div>
+<p><br />## Screenshot[dicovering host]<br />
+We’ve discovered that the target machine is at [IP]. Let’s go and scan that!.<br />
+<em>**</em></p>
+<h2 id="scanning-the-target">Scanning The Target</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$nmap -Pn -T4 -sC -sV -n [IP]
+</code></pre></div></div>
+<p>The Nmap scan tells us that there are 2 ports open <strong>22</strong> and <strong>80</strong>. The version of the services doesn’t look vulnerable, Let’s explore what’s there on port 80.
+<br /> -&gt; Screenshot nmap scan &lt;-
+<br />
+<br /></p>
+<h2 id="enumeration">Enumeration</h2>
+<p>-&gt;[screenshot website default page]
+<br />The website looks like running the default index.html file of web-server. Still there can be useful directory or file or there can be virtual hosting enabled. 
+But Virtual Hosting requires the domain name of the target’s site to reach the website.&lt;br &gt;We didn’t see any such words till now that can be tried as possible domain names so 
+we will go with fuzzing the root directory.
+<br />[Screenshot of fuzzing]
+<br /><strong>After doing recursive fuzzing with dirbuster we’ll get only one interesting directory cgi-bin containing test.sh and /test/test.cgi.</strong>
+<br />
+<br /></p>
+<h2 id="exploitation">Exploitation</h2>
+<p>Because there no such assets on the target other than cgi scripts, we’ll go and check whether the target system is vulnerable to <strong>shellshock</strong> vulnerability.
+<br />Shellshock is a bash vulnerability and it’s advantage can be taken only when some user input or HTTP headers are being processed by bash, perl, python or 
+cgi scripts. You can find about shellshock in more detail at [link].
+<br />
+So we will fire up Burp-Suite and try to exploit by sending a reverse shell.
+<br /> [screenshot burp-suite with shellshock header]
+<br />I’ve started netcat server so accept any connections for reverse shell.
+<br />[netcat screenshot with conntect]
+We got our reverse shell, that means the system is vulnerable to shell shock. We can also check it pinging to our system and capture icmp packets with tcmdump or 
+wireshark.
+<br />
+Let us now get a proper pty shell with <strong>python3 pty module</strong> and exporting the <strong>TERM env variable</strong>.
+<br />[screenshot pty shell]
+<br />
+<br /></p>
+<h2 id="privilege-escalation">Privilege Escalation</h2>
+<p>So now we will head to escalate out privileges and get the system.<br />
+We’ll check if the system is vulnerable to any kernel exploit with <strong>linux-exploit-suggester</strong>.
+<br />[screenshot linux-exploit-suggester]
+<br /> 
+Seems like it is vulnerable to dirty cow. I’ll transfer the exploit to the host machine and compile it there and execute with the following commands:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$gcc -pthread c0w.c -o c0w
+$./c0w 1
+</code></pre></div></div>
+<p>[screenshot of final state]<br />
+Great! We elevated our privileges. Just need to confirm that will <code class="language-plaintext highlighter-rouge">id</code>.
+<br /></p>
+
+:ET

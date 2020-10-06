@@ -1,17 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-06T13:18:26+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Personal Blog</title><subtitle>No discription till now!!</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/10/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-10-06T11:56:07+05:30</published><updated>2020-10-06T11:56:07+05:30</updated><id>http://localhost:4000/jekyll/update/2020/10/06/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/10/06/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-06T22:52:23+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Personal Blog</title><subtitle>No discription till now!!</subtitle><entry><title type="html">Sumo: 1 Vulnhub Walkthrough</title><link href="http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough.html" rel="alternate" type="text/html" title="Sumo: 1 Vulnhub Walkthrough" /><published>2020-10-06T11:56:07+05:30</published><updated>2020-10-06T11:56:07+05:30</updated><id>http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough</id><content type="html" xml:base="http://localhost:4000/walkthroughs/vulnhub/2020/10/06/Sumo-Vulnhub-Walkthrough.html">&lt;h2 id=&quot;info&quot;&gt;INFO&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;User:
+    &lt;ul&gt;
+      &lt;li&gt;Difficulty: Intermediate&lt;/li&gt;
+      &lt;li&gt;CTFey: No&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Root:
+    &lt;ul&gt;
+      &lt;li&gt;Difficulty: Easy&lt;/li&gt;
+      &lt;li&gt;CTFey: No&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OS: Linux&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;h2 id=&quot;discovering-the-target-machine&quot;&gt;Discovering The Target Machine&lt;/h2&gt;
+&lt;p&gt;We can discover the target by using Netdiscover but generally I use Namp ping-only scan because it takes much less time than Netdiscover. Netdiscover uses ARP packets to 
+discover the hosts over a range which can be extremely useful when the target host is blocking ping probes and Nmap ping-only scan won’t be able to discover the host. 
+&lt;br /&gt;That’s why I always start with Nmap and in case I don’t find anything I move to Netdiscover.
+&lt;br /&gt;We can use either of the following commands.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$nmap -sn -T4 192.168.67.*
+OR
+$netdiscover -i eth0 -r 192.168.67.1/24 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;## Screenshot[dicovering host]&lt;br /&gt;
+We’ve discovered that the target machine is at [IP]. Let’s go and scan that!.&lt;br /&gt;
+&lt;em&gt;**&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;scanning-the-target&quot;&gt;Scanning The Target&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$nmap -Pn -T4 -sC -sV -n [IP]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The Nmap scan tells us that there are 2 ports open &lt;strong&gt;22&lt;/strong&gt; and &lt;strong&gt;80&lt;/strong&gt;. The version of the services doesn’t look vulnerable, Let’s explore what’s there on port 80.
+&lt;br /&gt; -&amp;gt; Screenshot nmap scan &amp;lt;-
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;enumeration&quot;&gt;Enumeration&lt;/h2&gt;
+&lt;p&gt;-&amp;gt;[screenshot website default page]
+&lt;br /&gt;The website looks like running the default index.html file of web-server. Still there can be useful directory or file or there can be virtual hosting enabled. 
+But Virtual Hosting requires the domain name of the target’s site to reach the website.&amp;lt;br &amp;gt;We didn’t see any such words till now that can be tried as possible domain names so 
+we will go with fuzzing the root directory.
+&lt;br /&gt;[Screenshot of fuzzing]
+&lt;br /&gt;&lt;strong&gt;After doing recursive fuzzing with dirbuster we’ll get only one interesting directory cgi-bin containing test.sh and /test/test.cgi.&lt;/strong&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;exploitation&quot;&gt;Exploitation&lt;/h2&gt;
+&lt;p&gt;Because there no such assets on the target other than cgi scripts, we’ll go and check whether the target system is vulnerable to &lt;strong&gt;shellshock&lt;/strong&gt; vulnerability.
+&lt;br /&gt;Shellshock is a bash vulnerability and it’s advantage can be taken only when some user input or HTTP headers are being processed by bash, perl, python or 
+cgi scripts. You can find about shellshock in more detail at [link].
+&lt;br /&gt;
+So we will fire up Burp-Suite and try to exploit by sending a reverse shell.
+&lt;br /&gt; [screenshot burp-suite with shellshock header]
+&lt;br /&gt;I’ve started netcat server so accept any connections for reverse shell.
+&lt;br /&gt;[netcat screenshot with conntect]
+We got our reverse shell, that means the system is vulnerable to shell shock. We can also check it pinging to our system and capture icmp packets with tcmdump or 
+wireshark.
+&lt;br /&gt;
+Let us now get a proper pty shell with &lt;strong&gt;python3 pty module&lt;/strong&gt; and exporting the &lt;strong&gt;TERM env variable&lt;/strong&gt;.
+&lt;br /&gt;[screenshot pty shell]
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;privilege-escalation&quot;&gt;Privilege Escalation&lt;/h2&gt;
+&lt;p&gt;So now we will head to escalate out privileges and get the system.&lt;br /&gt;
+We’ll check if the system is vulnerable to any kernel exploit with &lt;strong&gt;linux-exploit-suggester&lt;/strong&gt;.
+&lt;br /&gt;[screenshot linux-exploit-suggester]
+&lt;br /&gt; 
+Seems like it is vulnerable to dirty cow. I’ll transfer the exploit to the host machine and compile it there and execute with the following commands:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$gcc -pthread c0w.c -o c0w
+$./c0w 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;[screenshot of final state]&lt;br /&gt;
+Great! We elevated our privileges. Just need to confirm that will &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt;.
+&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Walkthroughs" /><category term="Vulnhub" /><summary type="html">INFO User: Difficulty: Intermediate CTFey: No Root: Difficulty: Easy CTFey: No OS: Linux</summary></entry></feed>
